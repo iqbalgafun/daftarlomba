@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/tvPid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Pid"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:layout_below="@id/tvPid"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textSize="15sp"
+            android:layout_below="@id/tvName"
+            />
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:textSize="15sp"
+            android:layout_below="@id/tvEmail"
+            />
+        <View
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:layout_below="@id/tvDescription"/>
+    </RelativeLayout>
+
+</LinearLayout>

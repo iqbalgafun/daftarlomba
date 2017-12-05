@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_insert_pendaftar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.iqbalfauzip.kontak.InsertPendaftarActivity">
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID : "
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama : "
+        android:layout_below="@id/tvId"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat : "
+        android:layout_below="@id/tvNama"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvTtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TTL : "
+        android:layout_below="@id/tvAlamat"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/edtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:layout_toRightOf="@+id/tvId"
+        android:layout_alignBaseline="@+id/tvId"/>
+    <EditText
+        android:id="@+id/edtNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:layout_toRightOf="@+id/tvNama"
+        android:layout_alignBaseline="@+id/tvNama"/>
+    <EditText
+        android:id="@+id/edtAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Alamat"
+        android:layout_toRightOf="@+id/tvAlamat"
+        android:layout_alignBaseline="@+id/tvAlamat"/>
+    <EditText
+        android:id="@+id/edtTtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="TTL"
+        android:layout_toRightOf="@+id/tvTtl"
+        android:layout_alignBaseline="@+id/tvTtl"/>
+    <LinearLayout
+        android:id="@+id/Linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvTtl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:id="@+id/btInserting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert"/>
+        <Button
+            android:id="@+id/btBackGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+    </LinearLayout>
+
+</RelativeLayout>
